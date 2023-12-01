@@ -14,7 +14,7 @@ What are the key clinical factors that contribute to predicting positive outcome
 
 [Kaggle](https://www.kaggle.com/competitions/hivprogression)
 
-[DATA.GOV](https://catalog.data.gov/dataset/?tags=hiv&res_format=CS)
+[DATA.GOV]([https://catalog.data.gov/dataset/?tags=hiv&res_format=CS](https://catalog.data.gov/dataset/?tags=hiv&res_format=CSV))
 
 ## Rough Breakdown of Tasks: 
 
