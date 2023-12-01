@@ -13,6 +13,7 @@ What are the key clinical factors that contribute to predicting positive outcome
 Dataset(s) or API(s) to be Used: 
 
 https://www.kaggle.com/competitions/hivprogression 
+https://catalog.data.gov/dataset/?tags=hiv&res_format=CSV
 
 Rough Breakdown of Tasks: 
 
