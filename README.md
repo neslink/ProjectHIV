@@ -66,7 +66,9 @@ Create a presentation showcasing research questions, methodology, model developm
 
 Highlight the importance of clinical features in predicting HIV progression. 
 
-Project Overview: The Predicting HIV Progression project aims to develop a machine learning model that predicts the likelihood of reduced severity in HIV patients based on limited clinical information. Additionally, a user-friendly web application will be created to facilitate stakeholder interaction with the model. 
+## Project Overview: 
+
+The Predicting HIV Progression project aims to develop a machine learning model that predicts the likelihood of reduced severity in HIV patients based on limited clinical information. Additionally, a user-friendly web application will be created to facilitate stakeholder interaction with the model. 
 
 ## Usage and Installation Instructions of Libraries/Tools: 
 
