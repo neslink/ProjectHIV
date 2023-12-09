@@ -4,34 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicting HIV Progression</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p {
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Predicting HIV Progression</h1>
+    <div class="container">
+        <h1>Predicting HIV Progression</h1>
 
-    <form method="post" action="/predict">
-        <!-- Include input fields for user to input data -->
-        <label for="borough">Borough:</label>
-        <input type="text" name="borough" required><br>
+        <form method="post" action="/predict">
+            <!-- Include input fields for user to input data -->
+            <div class="form-group">
+                <label for="borough">Borough:</label>
+                <input type="text" class="form-control" name="borough" required>
+            </div>
 
-        <label for="uhf">UHF:</label>
-        <input type="text" name="uhf" required><br>
+            <div class="form-group">
+                <label for="uhf">UHF:</label>
+                <input type="text" class="form-control" name="uhf" required>
+            </div>
 
-        <label for="gender">Gender:</label>
-        <input type="text" name="gender" required><br>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" class="form-control" name="gender" required>
+            </div>
 
-        <label for="age">Age:</label>
-        <input type="text" name="age" required><br>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" class="form-control" name="age" required>
+            </div>
 
-        <label for="race">Race:</label>
-        <input type="text" name="race" required><br>
+            <div class="form-group">
+                <label for="race">Race:</label>
+                <input type="text" class="form-control" name="race" required>
+            </div>
 
-        <!-- Include other relevant input fields -->
+            <!-- Include other relevant input fields -->
 
-        <button type="submit">Predict</button>
-    </form>
+            <button type="submit">Predict</button>
+        </form>
 
-    {% if prediction is defined %}
-        <p>Predicted HIV Progression: {{ prediction[0] }}</p>
-    {% endif %}
+        {% if prediction is defined %}
+            <p>Predicted HIV Progression: {{ prediction[0] }}</p>
+        {% endif %}
+    </div>
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+S
