@@ -2,13 +2,13 @@
 
 ## Project Title: Predicting HIV Progression 
 
-Project Description/Outline: This project involves predicting likelihood from HIV diagnoses
+Project Description/Outline: This machine learning model is designed with the primary objective of predicting the likelihood of individuals with HIV eventually contracting AIDS. The prediction is based on a set of diverse factors that encompass demographic and geographic information, providing valuable insights into the progression of the disease. The key features considered by the model include race, gender, age, and the borough within New York City where individuals reside.
 
 ## Research Question(s) to Answer: 
 
-Can machine learning effectively predict the likelihood of reduced severity in HIV patients based on limited clinical information? 
+Can machine learning effectively predict the percent chance of HIV diagnosis to AIDS fatality? 
 
-What are the key clinical factors that contribute to predicting positive outcomes in HIV progression? 
+What key features can lead to eventual AIDS diagnosis?
 
 ## Dataset(s) or API(s) to be Used: 
 
@@ -81,6 +81,8 @@ Pandas and NumPy for data manipulation
 Scikit-learn for machine learning model development 
 
 Flask or Django for web application development 
+
+Tableau for data visualization 
 
 ## Team Members: 
 
