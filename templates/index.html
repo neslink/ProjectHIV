@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting HIV Progression Findings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        p {
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 20px;
+        }
+        section {
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .tableau-embed {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Predicting HIV Progression Findings</h1>
+
+        {% if prediction is defined %}
+            <p>Predicted HIV Progression: {{ prediction[0] }}</p>
+        {% endif %}
+
+        <!-- Section: Correlation Heatmap of DataFrame -->
+        <section>
+            <h2>Correlation Heatmap of DataFrame</h2>
+            <img src="{{ url_for('static', filename='correlation_heatmap.png') }}" alt="Correlation Heatmap">
+            <!-- Include any additional text or analysis here -->
+        </section>
+
+        <!-- Section: Training and Validation Loss Over Epochs -->
+        <section>
+            <h2>Training and Validation Loss Over Epochs</h2>
+            <img src="{{ url_for('static', filename='training_validation_loss_plot.png') }}" alt="Training and Validation Loss Plot">
+            <!-- Include any additional text or analysis here -->
+        </section>
+
+        <!-- Section: Feature Importance -->
+        <section>
+            <h2>Feature Importance</h2>
+            <img src="{{ url_for('static', filename='feature_importance_bar_plot.png') }}" alt="Feature Importance Bar Plot">
+            <!-- Include any additional text or analysis here -->
+        </section>
+
+        <!-- Section: Embed Tableau Visualization -->
+        <section>
+            <h2>Tableau Visualization</h2>
+            <div class="tableau-embed">
+                <iframe src="https://public.tableau.com/views/HIVProject_17023511202060/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width="800" height="600"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to your CSS stylesheet -->
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
