@@ -2,7 +2,7 @@
 
 ## Project Title: Predicting HIV Progression 
 
-Project Description/Outline: This project involves predicting the likelihood of a reduction in HIV severity for patients based on a limited clinical dataset. The goal is to develop a machine learning model that can analyze the available clinical information and forecast the probability of positive outcomes in terms of HIV progression. 
+Project Description/Outline: This project involves predicting likelihood from HIV diagnoses
 
 ## Research Question(s) to Answer: 
 
