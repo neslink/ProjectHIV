@@ -20,8 +20,6 @@ What are the key clinical factors that contribute to predicting positive outcome
 
 [Tableau](https://public.tableau.com/app/profile/shloka.jain/viz/HIVProject_17023511202060/Story1?publish=yes)
 
-## Rough Breakdown of Tasks: 
-
 ## Data Exploration and Prprocessing:  
 
 Explore and understand the structure of the limited clinical dataset. 
