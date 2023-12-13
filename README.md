@@ -20,6 +20,8 @@ What key features can lead to eventual AIDS diagnosis?
 
 [Tableau](https://public.tableau.com/app/profile/shloka.jain/viz/HIVProject_17023511202060/Story1?publish=yes)
 
+[Medium article](https://medium.com/@nescastillov/hiv-statistics-machine-learning-44a0477e0e64)
+
 ## Data Exploration and Prprocessing:  
 
 Explore and understand the structure of the limited clinical dataset. 
